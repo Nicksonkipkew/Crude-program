@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import sqlite3
 
 app = Flask(__name__)
-#We are creating a querry to creating the table and table columns(3 columns)
+#We are creating a querry to creating the table and table columns(3 column)
 
 #we are connecing to the database we created above
 conn = sqlite3.connect('items.db')
