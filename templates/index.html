@@ -1,0 +1,14 @@
+<h1>Items</h1>
+<ul>
+  {% for item in items %}
+    <li>
+      <h3>{{ item[1] }}</h3>
+      <p>{{ item[2] }}</p>
+      <form action="/delete/{{ item[0] }}" method="post">
+        <input type="submit" value="Delete">
+      </form>
+      <a href="/edit/{{ item[0] }}">Edit</a>
+    </li>
+  {% endfor %}
+</ul>
+<a href="/create">Add new item</a>
